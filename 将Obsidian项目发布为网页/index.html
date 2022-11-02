@@ -397,61 +397,61 @@
 <p>参见 <a href="../Python%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/">Python安装方法</a></p>
 <h2 id="mkdocs">安装mkdocs</h2>
 <p>使用pip安装 <code>mkdocs</code>
-<div class="highlight"><pre><span></span><code><span class="go">pip install mkdocs</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="go">pip install mkdocs</span>
 </code></pre></div></p>
 <h2 id="mkdocs_1">安装mkdocs主题和周边支持</h2>
 <p>安装 <code>mkdocs-material</code> 主题
-<div class="highlight"><pre><span></span><code><span class="go">pip install mkdocs-material</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="go">pip install mkdocs-material</span>
 </code></pre></div></p>
 <p>安装 <code>jieba</code>  中文分词工具, 便于后面支持中文关键字过滤搜索</p>
-<div class="highlight"><pre><span></span><code><span class="go">pip install jieba</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="go">pip install jieba</span>
 </code></pre></div>
 <h2 id="mkdocs_2">配置mkdocs</h2>
 <p>将以下内容复制, 保存为 <code>mkdocs.yml</code>
-<div class="highlight"><pre><span></span><code># 这部分内容按实际情况修改
-site_name: 摩尔百科  # 网页主页显示名称
-docs_dir: Obsidian Vault # 需要发布的obsidian项目文件夹名
-copyright: Copyright &amp;copy; 2004 - 2022 MORLAB # 网页底部信息
-theme:
-  logo: assets/logo.png #主页logo文件的相对路径 assets文件夹处于Obsidian Vault文件夹下
-  favicon: assets/favicon.png #浏览器标签页小Logo文件的相对路径,assets文件夹处于 Obsidian Vault文件夹下
-
-# 以下部分固定不用修改
-  name: material
-  language: zh
-  palette:
-    - scheme: default
-      toggle:
-        icon: material/brightness-7 
-        name: 切换到深色模式
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: 切换到浅色模式
-
-markdown_extensions:
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-plugins:
-  - search:
-      separator: &#39;[\s\u200b\-]&#39;
-extra:
-  generator: false
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># 这部分内容按实际情况修改
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>site_name: 摩尔百科  # 网页主页显示名称
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>docs_dir: Obsidian Vault # 需要发布的obsidian项目文件夹名
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>copyright: Copyright &amp;copy; 2004 - 2022 MORLAB # 网页底部信息
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>theme:
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  logo: assets/logo.png #主页logo文件的相对路径 assets文件夹处于Obsidian Vault文件夹下
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  favicon: assets/favicon.png #浏览器标签页小Logo文件的相对路径,assets文件夹处于 Obsidian Vault文件夹下
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a># 以下部分固定不用修改
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  name: material
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>  language: zh
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>  palette:
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    - scheme: default
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>      toggle:
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>        icon: material/brightness-7 
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        name: 切换到深色模式
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    - scheme: slate
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>      toggle:
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>        icon: material/brightness-4
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        name: 切换到浅色模式
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>markdown_extensions:
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>  - pymdownx.superfences:
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>      custom_fences:
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>        - name: mermaid
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>          class: mermaid
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>          format: !!python/name:pymdownx.superfences.fence_code_format
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>plugins:
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>  - search:
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>      separator: &#39;[\s\u200b\-]&#39;
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>extra:
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>  generator: false
 </code></pre></div></p>
 <p>将 <code>mkdocs.yml</code> 文件, 复制到 <code>Obsidian Vault</code> 文件夹同级目录, 注意不是复制到 <code>Obsidian Vault</code>文件夹 里面</p>
 <h2 id="obsidian">启动服务, 愉快地在网页上浏览Obsidian笔记</h2>
 <p>打开命令行, 定位到obsidian项目目录, 例如 <code>mkdocs.yml</code> 文件和Obsidian Vault 文件夹放在 <code>D:\project</code> 下, 就输入以下命令
-<div class="highlight"><pre><span></span><code><span class="go">cd D:\project</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="go">cd D:\project</span>
 </code></pre></div></p>
 <p>打开命令行, 启动项目
-<div class="highlight"><pre><span></span><code><span class="go">mkdocs serve</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="go">mkdocs serve</span>
 </code></pre></div></p>
 <p>浏览器中打开 <a href="http://127.0.0.1:8000">默认项目发布地址 http://127.0.0.1:8000</a> 开始浏览</p>
 <p>如需要修改发布的端口,让其它用户访问, 如使用80端口发布, 输入以下命令</p>
-<div class="highlight"><pre><span></span><code><span class="go">mkdocs serve -a 0.0.0.0:80</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="go">mkdocs serve -a 0.0.0.0:80</span>
 </code></pre></div>
 <p>效果如下图
 <img alt="" src="../assets/Pasted%20image%2020221028100056.png" /></p>
@@ -531,6 +531,12 @@ extra:
     
     
       <script src="../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

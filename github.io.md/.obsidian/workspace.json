@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "03c2efadbcfc6643",
+        "id": "00c7b7ca27341ea9",
         "type": "tabs",
         "children": [
           {
-            "id": "5d868d34438a8e29",
+            "id": "602a697390b43a28",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "熬夜随想20230911.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "熬夜随想20230911.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "熬夜随想20230911.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "熬夜随想20230911.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,12 +138,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5d868d34438a8e29",
+  "active": "602a697390b43a28",
   "lastOpenFiles": [
+    "熬夜随想20230911.md",
     "assets/icon.jpeg",
     "icon.jpeg",
     "assets/IMG_2023-09-11_10-19-51.jpg",
-    "熬夜随想20230911.md",
     "index.md",
     "assets/IMG_2023-09-11_10-19-51 1.jpg",
     "assets/Pasted image 20221114171600.png.md",
